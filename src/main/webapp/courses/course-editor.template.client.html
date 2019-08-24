@@ -1,0 +1,468 @@
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Editor</title>
+</head>
+
+<body class="bg-dark">
+
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="col-3">
+                    <button type="button" class="close float-left" aria-label="Close" style="color: white">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <a class="navbar-brand float-right" href="#"> CS5610 Web Dev </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-9" id="navbarColor01">
+                    <ul class="nav nav-tabs mr-auto nav-justified  nav-fill">
+                        <li class="nav-item">
+                            <a class="text-white bg-dark nav-link" href="#"> Build </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="text-white bg-dark nav-link active" href="#"> Pages <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="text-white bg-dark nav-link" href="#">Themes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white bg-dark nav-link" href="#">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white bg-dark nav-link" href="#">Apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white bg-dark nav-link" href="#">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="text-white bg-dark nav-link" href="#"><i class="material-icons"
+                                    style="color: white">add</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="row h-100">
+            <!--        <nav class="nav nav-pills text-white bg-dark col-3">-->
+            <div class="col-3">
+                <ul class="nav nav-pills text-white bg-dark flex-column">
+                    <li class="nav-item">
+                        <span class="nav-link active" role="tab" aria-selected="true">
+                            <a class="text-white" href="#"> Module1 </a>
+                            <a href="#" class="float-right">
+                                <i class="material-icons float-right" style="color: white; font-size: medium">close</i>
+                            </a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" role="tab" aria-selected="true">
+                            <a class="text-white" href="#"> Module2 </a>
+                            <a href="#" class="float-right">
+                                <i class="material-icons float-right" style="color: white; font-size: medium">close</i>
+                            </a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" role="tab" aria-selected="true">
+                            <a class="text-white" href="#"> Module3 </a>
+                            <a href="#" class="float-right">
+                                <i class="material-icons float-right" style="color: white; font-size: medium">close</i>
+                            </a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" role="tab" aria-selected="true">
+                            <a class="text-white" href="#"> Module4 </a>
+                            <a href="#" class="float-right">
+                                <i class="material-icons float-right" style="color: white; font-size: medium">close</i>
+                            </a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" role="tab" aria-selected="true">
+                            <a class="text-white" href="#"> Module5 </a>
+                            <a href="#" class="float-right">
+                                <i class="material-icons float-right" style="color: white; font-size: medium">close</i>
+                            </a>
+                        </span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" role="tab" aria-selected="true">
+                            <a href="#" class="float-right">
+                                <i class="material-icons float-right" style="color: white; font-size: medium">add</i>
+                            </a>
+                        </span>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="col-9 bg-white">
+                <div class="row">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item m-2">
+                            <a class="nav-link active text-white bg-dark" href="#"> Topic 1 </a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link text-white bg-dark" href="#"> Topic 2 </a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link text-white bg-dark" href="#"> Topic 3 </a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link text-white bg-dark" href="#"> Topic 4 </a>
+                        </li>
+                        <li class="nav-item m-2">
+                            <a class="nav-link text-white bg-dark" href="#"><i class="material-icons"
+                                    style="color: white; font-size: medium">add</i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <br>
+                <div class="row">
+                    <ul class="list-group col-12">
+                        <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-9">
+
+                                </div>
+                                <div class="col-3">
+                                    <span class="float-right" style="font-weight: bold">
+                                        <button type="button" class="btn btn-success">Save</button>
+                                        <a href="#" class="btn">Preview<i class="material-icons">toggle_on</i></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item">
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h4>Heading Widget</h4>
+                                        </div>
+                                        <div class="col-8">
+                                            <span class="float-right">
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_upward</i></a>
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_downward</i></a>
+                                                <select>
+                                                    <option value="heading" selected="">Heading</option>
+                                                    <option value="paragraph">Paragraph</option>
+                                                    <option value="list">List</option>
+                                                    <option value="link">Link</option>
+                                                    <option value="image">Image</option>
+                                                </select>
+                                                <a href="#" class="btn" style="background:#ff3640"><i
+                                                        class="material-icons">close</i></a>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon2">Heading Text:</span>
+                                            </div>
+                                            <input type="text" class="form-control" id="ht" placeholder="Heading text"
+                                                aria-label="h-text" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon3">Heading Type:</span>
+                                            </div>
+                                            <select class="form-control">
+                                                <option value="h4" selected="">Heading 1</option>
+                                                <option value="h1">Heading 2</option>
+                                                <option value="h2">Heading 3</option>
+                                                <option value="h3">Heading 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon4">Widget Name:</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Widget name"
+                                                aria-label="w-name" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row m-1">
+                                        <h3>Preview</h3>
+                                    </div>
+                                    <div class="row m-1">
+                                        <h1>Heading Text</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h4>Paragraph Widget</h4>
+                                        </div>
+                                        <div class="col-8">
+                                            <span class="float-right">
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_upward</i></a>
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_downward</i></a>
+                                                <select>
+                                                    <option value="heading">Heading</option>
+                                                    <option value="paragraph" selected="">Paragraph</option>
+                                                    <option value="list">List</option>
+                                                    <option value="link">Link</option>
+                                                    <option value="image">Image</option>
+                                                </select>
+                                                <a href="#" class="btn" style="background:#ff3640"><i
+                                                        class="material-icons">close</i></a>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Paragraph Text:</span>
+                                            </div>
+                                            <textarea class="form-control"
+                                                aria-label="With textarea">Lorem ipsum</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon6">Widget Name:</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Widget name"
+                                                aria-label="w-name" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row m-1">
+                                        <h3>Preview</h3>
+                                    </div>
+                                    <div class="row m-2">
+                                        <p>Lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h4>List Widget</h4>
+                                        </div>
+                                        <div class="col-8">
+                                            <span class="float-right">
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_upward</i></a>
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_downward</i></a>
+                                                <select>
+                                                    <option value="heading">Heading</option>
+                                                    <option value="paragraph">Paragraph</option>
+                                                    <option value="list" selected="">List</option>
+                                                    <option value="link">Link</option>
+                                                    <option value="image">Image</option>
+                                                </select>
+                                                <a href="#" class="btn" style="background:#ff3640"><i
+                                                        class="material-icons">close</i></a>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon7">List Text:</span>
+                                            </div>
+                                            <input type="text" class="form-control"
+                                                placeholder="Put each item in separate row" aria-label="h-text"
+                                                aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon8">List Type:</span>
+                                            </div>
+                                            <select class="form-control">
+                                                <option value="ul">Unordered list</option>
+                                                <option value="ol">Ordered list</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon9">Widget Name:</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Widget name"
+                                                aria-label="w-name" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row m-1">
+                                        <h3>Preview</h3>
+                                    </div>
+                                    <div class="row m-1">
+                                        <ul>
+                                            <li>Put each</li>
+                                            <li>item in</li>
+                                            <li>separate row</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h4>Image Widget</h4>
+                                        </div>
+                                        <div class="col-8">
+                                            <span class="float-right">
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_upward</i></a>
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_downward</i></a>
+                                                <select>
+                                                    <option value="heading">Heading</option>
+                                                    <option value="paragraph">Paragraph</option>
+                                                    <option value="list">List</option>
+                                                    <option value="link">Link</option>
+                                                    <option value="image" selected="">Image</option>
+                                                </select>
+                                                <a href="#" class="btn" style="background:#ff3640"><i
+                                                        class="material-icons">close</i></a>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon10">Image URL:</span>
+                                            </div>
+                                            <input type="text" class="form-control"
+                                                placeholder="https://www.publicdomainpictures.net/pictures/90000/velka/space-galaxy.jpg"
+                                                aria-label="h-text" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-11">Widget Name:</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Widget name"
+                                                aria-label="w-name" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row m-1">
+                                        <h3>Preview</h3>
+                                    </div>
+                                    <div class="row m-1">
+                                        <img src="https://www.publicdomainpictures.net/pictures/90000/velka/space-galaxy.jpg"
+                                            alt="Stars" style="width:200px;height:300px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="card m-2">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h4>Link Widget</h4>
+                                        </div>
+                                        <div class="col-8">
+                                            <span class="float-right">
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_upward</i></a>
+                                                <a href="#" class="btn" style="background:#ffd41e"><i
+                                                        class="material-icons">arrow_downward</i></a>
+                                                <select>
+                                                    <option value="heading">Heading</option>
+                                                    <option value="paragraph">Paragraph</option>
+                                                    <option value="list">List</option>
+                                                    <option value="link" selected="">Link</option>
+                                                    <option value="image">Image</option>
+                                                </select>
+                                                <a href="#" class="btn" style="background:#ff3640"><i
+                                                        class="material-icons">close</i></a>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon12">Link URL:</span>
+                                            </div>
+                                            <input type="text" class="form-control"
+                                                placeholder="https://www.youtube.com/user/emergencyawesome"
+                                                aria-label="h-text" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon13">Link Text:</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Link text"
+                                                aria-label="h-text" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-group m-2">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon15">Widget Name:</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Widget name"
+                                                aria-label="w-name" aria-describedby="basic-addon2">
+                                        </div>
+                                    </div>
+                                    <div class="row m-1">
+                                        <h3>Preview</h3>
+                                    </div>
+                                    <div class="row m-1">
+                                        <a href="https://www.youtube.com/user/emergencyawesome">Link text</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <a href="#"><i class="material-icons"
+                style="font-size: 48px; position: fixed; bottom: 1%; right: 1%; color: red">
+                add_box
+            </i></a>
+    </div>
+</body>
+
+</html>

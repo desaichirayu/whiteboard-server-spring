@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="profile.style.client.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Profile</h1>
+        <form>
+            <div class="form-group row">
+                <div class="col-sm-12 alert alert-success" role="alert">
+                    Profile Successfully saved!
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="username" class="col-sm-2 col-form-label">
+                    Username </label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="username" placeholder="Alice" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="phone" class="col-sm-2 col-form-label">
+                    Phone </label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" id="phone" placeholder="(555) 123-4324">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">
+                    Email </label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="alice@wonderland.com">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">
+                    Role </label>
+                <div class="col-sm-10">
+                    <select name="role" class="form-control">
+                        <option value="faculty">Faculty</option>
+                        <option value="student">Student</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="dob" class="col-sm-2 col-form-label">
+                    Date of Birth </label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="dob" placeholder="alice@wonderland.com">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label"></label>
+                <div class="col-sm-10">
+                    <a href="#" class="btn btn-success btn-block" role="button" aria-disabled="flase">Update</a>
+                    <a href="../index.html" class="btn btn-danger btn-block" role="button"
+                        aria-disabled="flase">Logout</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

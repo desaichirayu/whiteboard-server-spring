@@ -1,1 +1,1 @@
-Java Server for CS5610 Summer full 2019
+Java Spring Boot server for Whiteboard.
